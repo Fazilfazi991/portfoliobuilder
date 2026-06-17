@@ -32,13 +32,13 @@ export function Hero() {
             Create My Portfolio - It&apos;s Free
             <ArrowRight size={18} />
           </Link>
-          <a
-            href="#examples"
+          <Link
+            href="/examples"
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-6 py-3 text-base font-extrabold text-ink shadow-sm transition hover:border-brand-200 hover:text-brand-600"
           >
             <Play size={18} />
             Watch Demo
-          </a>
+          </Link>
         </div>
         <div className="mt-5 grid grid-cols-1 gap-3 min-[420px]:grid-cols-3">
           {chips.map(({ label, icon: Icon }) => (

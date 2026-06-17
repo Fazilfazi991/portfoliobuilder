@@ -1,4 +1,5 @@
-import { AppShellHeader } from "@/components/AppShellHeader";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { TemplateThumbnail } from "@/components/TemplateThumbnail";
 import { includedSections, templates } from "@/data/templates";
 import { Check, Heart } from "lucide-react";
@@ -19,7 +20,7 @@ export default async function TemplateDetailPage({
 
   return (
     <>
-      <AppShellHeader />
+      <Header />
       <main className="mx-auto min-h-screen max-w-5xl px-4 pb-28 pt-8 sm:px-6 lg:px-8">
         <div className="mb-5 flex items-start justify-between gap-4">
           <div>
@@ -68,6 +69,7 @@ export default async function TemplateDetailPage({
           </aside>
         </div>
       </main>
+      <Footer />
       <div className="fixed bottom-0 left-0 right-0 border-t border-slate-200 bg-white p-3 sm:hidden">
         <Link
           href="/auth"

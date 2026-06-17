@@ -5,7 +5,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { Logo } from "./Logo";
 
-const navLinks = ["Features", "Templates", "Examples", "Pricing", "Resources"];
+const navLinks = [
+  { label: "Features", href: "/features" },
+  { label: "Templates", href: "/templates" },
+  { label: "Examples", href: "/examples" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Resources", href: "/resources" },
+];
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -17,16 +23,16 @@ export function Header() {
 
         <nav className="hidden items-center gap-9 text-sm font-semibold text-slate-700 lg:flex">
           {navLinks.map((link) => (
-            <a key={link} href={`#${link.toLowerCase()}`} className="transition hover:text-brand-600">
-              {link}
-            </a>
+            <Link key={link.href} href={link.href} className="transition hover:text-brand-600">
+              {link.label}
+            </Link>
           ))}
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <a href="#" className="text-sm font-semibold text-slate-700 hover:text-brand-600">
+          <Link href="/auth" className="text-sm font-semibold text-slate-700 hover:text-brand-600">
             Log in
-          </a>
+          </Link>
           <Link
             href="/create"
             className="rounded-lg bg-brand-600 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-200 transition hover:bg-brand-700"
@@ -50,18 +56,18 @@ export function Header() {
         <div className="border-t border-slate-100 bg-white px-4 py-4 shadow-soft lg:hidden">
           <nav className="grid gap-2">
             {navLinks.map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
+              <Link
+                key={link.href}
+                href={link.href}
                 className="rounded-lg px-3 py-3 text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600"
                 onClick={() => setOpen(false)}
               >
-                {link}
-              </a>
+                {link.label}
+              </Link>
             ))}
-            <a className="rounded-lg px-3 py-3 text-base font-semibold text-slate-700" href="#">
+            <Link className="rounded-lg px-3 py-3 text-base font-semibold text-slate-700" href="/auth" onClick={() => setOpen(false)}>
               Log in
-            </a>
+            </Link>
             <Link
               href="/create"
               className="mt-2 rounded-lg bg-brand-600 px-4 py-3 text-center text-base font-bold text-white"

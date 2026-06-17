@@ -1,115 +1,155 @@
 export const doctorTemplateData = {
-  name: "Dr. Amina Rahman",
-  title: "Consultant Dermatologist",
-  badge: "Board Certified Dermatologist",
-  intro:
-    "Helping patients achieve healthy, confident skin through evidence-based dermatology care.",
-  reviews: "4.9/5 from 350+ reviews",
-  trusted: "Trusted by 2,000+ happy patients",
+  profile: {
+    name: "Dr. Amina Rahman",
+    subtitle: "Healthcare Professional",
+    title: "Consultant Physician & Internal Medicine Specialist",
+    badge: "Compassionate Care. Evidence-Based Medicine.",
+    intro:
+      "Dedicated to providing personalized, compassionate and comprehensive healthcare. I believe in treating the person, not just the condition.",
+    primaryCta: "Book Appointment",
+    secondaryCta: "Download Profile",
+    heroImage: "/templates/doctor-trust/doctor-hero.webp",
+    availability: ["In-clinic", "Online", "Telehealth"],
+    floatingStat: "10+ Years",
+    floatingLabel: "of Medical Practice",
+  },
   stats: [
-    { value: "12+", label: "Years Experience" },
-    { value: "2K+", label: "Patients Treated" },
-    { value: "15", label: "Research Papers" },
+    { value: "10+", label: "Years of Experience" },
+    { value: "2,500+", label: "Patients Treated" },
     { value: "98%", label: "Patient Satisfaction" },
+    { value: "12+", label: "Certifications" },
+    { value: "3", label: "Affiliated Hospitals" },
   ],
-  specializations: [
-    {
-      title: "Acne Treatment",
-      text: "Advanced solutions for acne and clear, healthy skin.",
-    },
-    {
-      title: "Cosmetic Dermatology",
-      text: "Enhancing natural beauty with safe, personalized treatments.",
-    },
-    {
-      title: "Eczema & Psoriasis",
-      text: "Managing chronic skin conditions with long-term care and support.",
-    },
-    {
-      title: "Laser Procedures",
-      text: "State-of-the-art laser technology for a range of skin concerns.",
-    },
+  expertise: [
+    "Internal Medicine",
+    "Preventive Care",
+    "Chronic Disease Management",
+    "Women's Health",
+    "Health Screening",
+    "Lifestyle Medicine",
   ],
-  about:
-    "With over 12 years of experience in dermatology, Dr. Amina Rahman is dedicated to delivering personalized care backed by science and empathy. She believes in understanding each patient's unique skin journey and creating treatments that deliver real, lasting results.",
-  aboutBullets: [
-    "Board Certified Dermatologist",
-    "Specialized in Medical, Cosmetic & Laser Dermatology",
-    "Research-driven approach with global exposure",
-    "Committed to patient education and long-term care",
-  ],
-  qualifications: [
-    "MBBS - Dhaka Medical College",
-    "MD Dermatology - Bangabandhu Sheikh Mujib Medical University",
-    "Fellowship in Cosmetic Dermatology - Greece",
-    "Member - American Academy of Dermatology",
-  ],
-  clinicInfo: {
-    name: "SkinCare Medical Center, Dubai",
-    location: "Jumeirah Lake Towers, Cluster M, Dubai, United Arab Emirates",
-    phone: "+971 50 123 4567",
-    email: "info@skincaremedical.ae",
-    website: "www.skincaremedical.ae",
-    hours: [
-      ["Mon - Thu", "9:00 AM - 7:00 PM"],
-      ["Friday", "9:00 AM - 1:00 PM"],
-      ["Saturday", "10:00 AM - 4:00 PM"],
-      ["Sunday", "Closed"],
+  about: {
+    image: "/templates/doctor-trust/doctor-about.webp",
+    story:
+      "I'm Dr. Amina Rahman, a consultant physician with over a decade of experience in internal medicine. My journey in healthcare is driven by a simple belief - every patient deserves to be heard, understood and treated with dignity.",
+    second:
+      "I completed my MBBS from Dhaka Medical College and specialized in Internal Medicine. Over the years, I've had the privilege of working with diverse patients and complex cases that continue to inspire my commitment to lifelong learning.",
+    signature: "Amina Rahman",
+    values: [
+      {
+        title: "Compassion",
+        text: "Treating every patient with empathy and respect.",
+      },
+      {
+        title: "Excellence",
+        text: "Committed to the highest standards of care.",
+      },
+      {
+        title: "Integrity",
+        text: "Honest, transparent and ethical in all practices.",
+      },
+      {
+        title: "Collaboration",
+        text: "Working together for better health outcomes.",
+      },
     ],
   },
   services: [
     {
-      title: "Acne & Scar Treatment",
-      text: "Medical therapies, chemical peels, and lasers to treat acne and scars.",
+      title: "General Consultation",
+      text: "Comprehensive health assessment and treatment.",
     },
     {
-      title: "Skin Rejuvenation",
-      text: "Botox, fillers, PRP, and advanced rejuvenation for youthful skin.",
+      title: "Chronic Disease Management",
+      text: "Diabetes, Hypertension, Thyroid and more.",
     },
     {
-      title: "Pigmentation Treatment",
-      text: "Melasma, sunspots, and uneven tone treatment solutions.",
+      title: "Preventive Health Check-up",
+      text: "Screenings and regular health evaluations.",
     },
     {
-      title: "Laser Hair Reduction",
-      text: "Safe, effective, and long-lasting laser hair removal.",
+      title: "Women's Health",
+      text: "PCOS, Menopause, Hormonal and general care.",
     },
     {
-      title: "Eczema & Psoriasis Care",
-      text: "Personalized treatment plans for chronic skin conditions.",
+      title: "Lifestyle & Nutrition Counselling",
+      text: "Personalized plans for better living.",
+    },
+    {
+      title: "Vaccination & Travel Health",
+      text: "Travel advice and vaccination services.",
     },
   ],
-  education: [
-    ["2010", "MBBS", "Dhaka Medical College"],
-    ["2014", "MD - Dermatology", "BSMMU, Dhaka"],
-    ["2016", "Fellowship in Cosmetic Dermatology", "Greece"],
-    ["2017", "Advanced Laser Training", "Germany"],
-    ["2019", "Research Fellowship Skin Oncology", "USA"],
+  credentials: [
+    ["2012", "MBBS", "Dhaka Medical College, University of Dhaka"],
+    ["2013", "Internship", "Dhaka Medical College Hospital"],
+    ["2016", "MD Internal Medicine", "Bangabandhu Sheikh Mujib Medical University"],
+    ["2017", "Fellowship", "Royal College of Physicians, UK"],
+    ["2019", "Certification", "Advanced Cardiac Life Support"],
+    ["2021", "Certification", "Diabetes Care & Education Specialist"],
+  ],
+  gallery: [
+    {
+      title: "Consultation Room",
+      image: "/templates/doctor-trust/doctor-about.webp",
+    },
+    {
+      title: "Waiting Area",
+      image: "/templates/doctor-trust/clinic.webp",
+    },
+    {
+      title: "Clinic Reception",
+      image: "/templates/doctor-trust/clinic.webp",
+    },
+    {
+      title: "Examination Room",
+      image: "/templates/doctor-trust/service-rejuvenation.webp",
+    },
+    {
+      title: "Health & Wellness",
+      image: "/templates/doctor-trust/service-pigmentation.webp",
+    },
   ],
   testimonials: [
     {
       quote:
-        "Dr. Amina is incredibly kind and knowledgeable. My acne treatment plan exceeded my expectations.",
-      name: "Sara Khan",
-      location: "Dubai",
+        "Dr. Amina is an exceptional doctor. She listens carefully and explains everything in a way that is easy to understand. Highly recommended.",
+      name: "Farah Ahmed",
     },
     {
       quote:
-        "She took time to understand my skin concerns and provided a treatment plan that truly worked for me.",
-      name: "Nadia Ahmed",
-      location: "Abu Dhabi",
+        "I have been consulting her for my diabetes management. Her guidance has helped me improve my health significantly.",
+      name: "Kamal Uddin",
     },
     {
       quote:
-        "The clinic is modern and clean, and the staff are very professional. Great experience overall.",
-      name: "Fatima Al Mansoori",
-      location: "Dubai",
+        "Very professional and compassionate. The clinic is clean, well-organized and the staff is very cooperative.",
+      name: "Nusrat Jahan",
     },
   ],
   faqs: [
-    "How do I book an appointment?",
-    "Do you accept insurance?",
-    "What should I bring to my visit?",
-    "How early should I arrive?",
+    {
+      question: "Do you offer online consultations?",
+      answer:
+        "Yes, online consultations are available for patients who cannot visit the clinic in person. Please book an appointment in advance.",
+    },
+    {
+      question: "What are your consultation hours?",
+      answer: "Consultations are available Saturday to Thursday from 9:00 AM to 6:00 PM.",
+    },
+    {
+      question: "Do I need an appointment?",
+      answer: "Appointments are recommended so each patient gets enough time and attention.",
+    },
+    {
+      question: "What insurance do you accept?",
+      answer: "Insurance support depends on your provider. Please contact the clinic before your visit.",
+    },
   ],
+  contact: {
+    phone: "+880 1234 567890",
+    email: "amina.rahman@medicare.com",
+    location: "House 15, Road 7, Dhanmondi, Dhaka 1205, Bangladesh",
+    hours: "Sat - Thu: 9:00 AM - 6:00 PM\nFriday: Closed",
+  },
 };

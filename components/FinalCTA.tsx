@@ -1,4 +1,5 @@
 import { ArrowRight, Rocket } from "lucide-react";
+import Link from "next/link";
 
 export function FinalCTA() {
   return (
@@ -15,13 +16,13 @@ export function FinalCTA() {
             Join thousands of professionals who trust Portify to build their online presence.
           </p>
         </div>
-        <a
-          href="#pricing"
+        <Link
+          href="/create"
           className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-600 px-6 py-3 text-sm font-extrabold text-white shadow-lg shadow-blue-200"
         >
           Create My Portfolio - It&apos;s Free
           <ArrowRight size={17} />
-        </a>
+        </Link>
       </div>
     </section>
   );

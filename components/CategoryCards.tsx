@@ -6,6 +6,7 @@ import {
   Stethoscope,
   UserRound,
 } from "lucide-react";
+import Link from "next/link";
 import { SectionTitle } from "./SectionTitle";
 
 const categories = [
@@ -53,9 +54,9 @@ export function CategoryCards() {
       <SectionTitle title="Create a portfolio for every profession" />
       <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-6">
         {categories.map(({ title, description, icon: Icon, color }) => (
-          <a
+          <Link
             key={title}
-            href="#templates"
+            href="/templates"
             className="group rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:border-brand-200 hover:shadow-card sm:p-5"
           >
             <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-full ${color}`}>
@@ -66,7 +67,7 @@ export function CategoryCards() {
             <span className="mt-4 inline-flex text-xs font-extrabold text-brand-600">
               Explore <span className="ml-1 transition group-hover:translate-x-1">-&gt;</span>
             </span>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

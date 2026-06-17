@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import Link from "next/link";
 import { SectionTitle } from "./SectionTitle";
 
 const plans = [
@@ -67,8 +68,8 @@ export function PricingPreview() {
                 </li>
               ))}
             </ul>
-            <a
-              href="#"
+            <Link
+              href="/create"
               className={`mt-7 flex min-h-11 items-center justify-center rounded-lg border px-4 py-3 text-sm font-extrabold ${
                 plan.popular
                   ? "border-brand-600 bg-brand-600 text-white"
@@ -76,7 +77,7 @@ export function PricingPreview() {
               }`}
             >
               {plan.cta}
-            </a>
+            </Link>
           </article>
         ))}
       </div>

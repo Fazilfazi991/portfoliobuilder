@@ -1,18 +1,34 @@
 import { Facebook, Github, Instagram, Linkedin, Send, Twitter } from "lucide-react";
+import Link from "next/link";
 import { Logo } from "./Logo";
 
 const groups = [
   {
     title: "Product",
-    links: ["Features", "Templates", "Examples", "Pricing"],
+    links: [
+      { label: "Features", href: "/features" },
+      { label: "Templates", href: "/templates" },
+      { label: "Examples", href: "/examples" },
+      { label: "Pricing", href: "/pricing" },
+    ],
   },
   {
     title: "Resources",
-    links: ["Blog", "Help Center", "Guides", "Community"],
+    links: [
+      { label: "Resources", href: "/resources" },
+      { label: "Create", href: "/create" },
+      { label: "Login", href: "/auth" },
+      { label: "Sample", href: "/p/alex" },
+    ],
   },
   {
     title: "Company",
-    links: ["About Us", "Careers", "Privacy Policy", "Terms of Service"],
+    links: [
+      { label: "About Us", href: "/resources" },
+      { label: "Careers", href: "/resources" },
+      { label: "Privacy Policy", href: "/resources" },
+      { label: "Terms of Service", href: "/resources" },
+    ],
   },
 ];
 
@@ -45,9 +61,9 @@ export function Footer() {
             <h3 className="text-sm font-extrabold">{group.title}</h3>
             <div className="mt-4 grid gap-3">
               {group.links.map((link) => (
-                <a key={link} href="#" className="text-sm font-medium text-slate-300 hover:text-white">
-                  {link}
-                </a>
+                <Link key={link.label} href={link.href} className="text-sm font-medium text-slate-300 hover:text-white">
+                  {link.label}
+                </Link>
               ))}
             </div>
           </div>
@@ -75,7 +91,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs font-semibold text-slate-400">
-        © 2026 Portify. All rights reserved.
+        Copyright 2026 Portify. All rights reserved.
       </div>
     </footer>
   );

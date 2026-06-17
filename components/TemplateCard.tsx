@@ -5,7 +5,7 @@ import { TemplateThumbnail } from "./TemplateThumbnail";
 export function TemplateCard({ template }: { template: Template }) {
   return (
     <article className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm transition hover:-translate-y-1 hover:shadow-card">
-      <Link href={template.publicPath} aria-label={`Preview ${template.name}`}>
+      <Link href={`/templates/${template.id}`} aria-label={`View ${template.name} details`}>
         <TemplateThumbnail template={template} />
       </Link>
       <div className="mt-4 flex items-start justify-between gap-3">
@@ -29,7 +29,7 @@ export function TemplateCard({ template }: { template: Template }) {
           Preview
         </Link>
         <Link
-          href="/auth"
+          href="/create"
           className="flex min-h-10 items-center justify-center rounded-lg bg-brand-600 text-xs font-black text-white"
         >
           Use Template

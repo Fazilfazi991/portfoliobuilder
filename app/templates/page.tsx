@@ -1,4 +1,5 @@
-import { AppShellHeader } from "@/components/AppShellHeader";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { PageIntro } from "@/components/PageIntro";
 import { TemplateCard } from "@/components/TemplateCard";
 import { filters, templates } from "@/data/templates";
@@ -6,8 +7,8 @@ import { filters, templates } from "@/data/templates";
 export default function TemplatesPage() {
   return (
     <>
-      <AppShellHeader />
-      <main className="mx-auto min-h-screen max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+      <Header />
+      <main className="mx-auto min-h-screen max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <PageIntro
           title="Choose a Template"
           subtitle="Pick a template that matches your style and profession."
@@ -32,6 +33,7 @@ export default function TemplatesPage() {
           ))}
         </div>
       </main>
+      <Footer />
     </>
   );
 }
